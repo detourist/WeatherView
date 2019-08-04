@@ -1,8 +1,9 @@
+
 <!DOCTYPE HTML>
 <html lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>WeatherView</title>
+<title>[d] WeatherView</title>
 <style type="text/css">
 <!--
 html,
@@ -126,7 +127,8 @@ window.onload = function(){
 <div id="header">
 	※表示コンテンツはそれぞれの著作権者に帰属します →
 	<a href="http://www3.nhk.or.jp/news/" target="_blank">NHKニュース</a> /
-	<a href="http://yahoo.jp/xSVAfj" target="_blank">Yahoo 雨雲レーダー</a> /
+	<a href="http://yahoo.jp/fk2xyr" target="_blank">Yahoo 雨雲レーダー</a> /
+	<a href="http://yahoo.jp/eqMPtq" target="_blank">Yahoo 台風情報</a> /
 	<a href="http://yahoo.jp/ZAR1I5" target="_blank">Yahoo 混雑レーダー</a> /
 	<a href="http://www.kyoshin.bosai.go.jp/kyoshin/" target="_blank">強震モニタ</a> /
 	<a href="https://110chang.com/traininfo/" target="_blank">TrainInfo</a>
@@ -136,11 +138,11 @@ window.onload = function(){
 		<input type="text" id="reload-time-value" size="3" value="10" onclick="this.select(0,this.value.length)" onchange="reload_time_change();" />
 		<span title="※対象サイトが外部ドメインからのコンテンツ埋め込み(X-Frame-Options)を許可していない場合は表示されません。">
 			上:
-			<input type="text" id="form-top-url" size="10" value="http://yahoo.jp/xSVAfj" onclick="this.select(0,this.value.length)" onchange="url_top_change();" />
+			<input type="text" id="form-top-url" size="10" value="http://yahoo.jp/fk2xyr" onclick="this.select(0,this.value.length)" onchange="url_top_change();" />
 		</span>
 		<span title="※対象サイトが外部ドメインからのコンテンツ埋め込み(X-Frame-Options)を許可していない場合は表示されません。">
 			下:
-			<input type="text" id="form-bottom-url" size="10" value="http://yahoo.jp/ZAR1I5" onclick="this.select(0,this.value.length)" onchange="url_bottom_change();" />
+			<input type="text" id="form-bottom-url" size="10" value="http://yahoo.jp/eqMPtq" onclick="this.select(0,this.value.length)" onchange="url_bottom_change();" />
 		</span>
 		右:
 		<select id="form-right-url" onchange="url_right_change();">
@@ -154,8 +156,8 @@ window.onload = function(){
 		<iframe id="frame-left" src="http://www3.nhk.or.jp/news/" scrolling="yes" frameborder="0" style="width:390px; height:100%;"></iframe>
 	</div>
 	<div id="center">
-		<iframe id="frame-top" src="http://yahoo.jp/xSVAfj" scrolling="auto" frameborder="0" style="width:100%; height:50%;"></iframe>
-		<iframe id="frame-bottom" src="http://yahoo.jp/ZAR1I5" scrolling="auto" frameborder="0" style="width:100%; height:50%;"></iframe>
+		<iframe id="frame-top" src="http://yahoo.jp/fk2xyr" scrolling="auto" frameborder="0" style="width:100%; height:50%;"></iframe>
+		<iframe id="frame-bottom" src="http://yahoo.jp/eqMPtq" scrolling="auto" frameborder="0" style="width:100%; height:50%;"></iframe>
 	</div>
 	<div id="right">
 		<iframe id="frame-right" src="http://www.kmoni.bosai.go.jp/new/" scrolling="no" frameborder="0" style="width:370px; height:608px;"></iframe>
